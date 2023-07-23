@@ -24,7 +24,7 @@ Again, using MSE, after 1278 episodes the agent is able to complete the game usi
 [View Video](https://github.com/rlamprell/Airstriker_gym_ddqn/assets/90906655/b8903e29-ca6c-4d54-b158-5a3ef9463221)
 
 ### Huber 8 batches after 27229 episodes
-Changing the loss to Huber and giving the agent significantly more time to play.  The agent develops an aggressive playstyle where it attempts to maximise the reward function - shooting as many enemy ships as possible while still completing the game.
+Changing the loss function to Huber and giving the agent significantly more time to play, the agent develops an aggressive playstyle where it attempts to maximise the reward function - shooting as many enemy ships as possible while still completing the game.
 
 [View Video](https://github.com/rlamprell/Airstriker_gym_ddqn/assets/90906655/b4d17162-7a2a-4581-8048-00ce80ba5d6e)
 
