@@ -1,10 +1,15 @@
-# Airstriker_gym_ddqn
+# Airstriker OpenAI Double Deep Q-Learning
 
 ## Project Description
 This repository trains a Deep Reinforcement Learning agent to play the Sega Genesis game 'Airstriker' using the following tech stack:
 - OpenAI's gym retro library.
 - Python.
 - TensorFlow.
+
+## Quick Start
+- git clone the repo
+- cd into repo_path/src
+- run python main_test.py or python main_train.py
 
 ## Architecture
 
@@ -38,3 +43,13 @@ Changing the loss function to Huber and giving the agent significantly more time
     <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/>
   </a>
 </p>
+
+
+## Next Steps:
+- Consolidate the output folder pathing to a variable - currently all over the place.
+- Further segment the reinforcement_learning folder - to neural_network, agent, rl_model, etc.
+- Introduce linting tool to clean up the general formatting of the code.
+- Introduce package manager to make it easier to install - maybe make a pip install.
+- Decouple some of the files - similar to the GelSightMujoco repo (probably need to go further than that).
+- Optimise the code, could run likely run a lot of this async to increase training speeds.  The batches are probably async already but I could increase the number of batches - I imagine the io between cpu, gpu, ram and ssd are restricting preformance.
+- It would be good to be able to turn the renderer on/off during flight.  
