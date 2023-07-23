@@ -15,3 +15,14 @@ This repository trains a Deep Reinforcement Learning agent to play the Sega Gene
 
 ### Huber 8 batches after 27229 episodes
 [View Video](https://github.com/rlamprell/Airstriker_gym_ddqn/assets/90906655/b4d17162-7a2a-4581-8048-00ce80ba5d6e)
+
+
+## Languages and Tools:
+<p align="left">
+  <a href="https://www.python.org" target="_blank" rel="noopener noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
+  </a>
+  <a href="https://www.tensorflow.org" target="_blank" rel="noopener noreferrer">
+    <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/>
+  </a>
+</p>
