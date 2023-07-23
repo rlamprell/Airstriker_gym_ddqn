@@ -5,8 +5,8 @@
 import numpy as np
 
 # Local .py imports
-from replaybuffer import ReplayBuffer
-from neuralnetwork import build_nn
+from reinforcement_learning.replaybuffer import ReplayBuffer
+from reinforcement_learning.neuralnetwork import build_nn
 from tensorflow.keras.models import load_model
 
 

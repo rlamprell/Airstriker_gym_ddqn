@@ -8,14 +8,16 @@ import numpy as np
 import os
 
 # Local .py imports
-import retro_wrappers
-from plotter import PlotResults
+# import reinforcement_learning.retro_wrappers
+from reinforcement_learning.retro_wrappers import make_retro, AirstrikerDiscretizer, wrap_deepmind_retro
+from utils.plotter import PlotResults
 
+print("inside bot.py")
 
 # Make sure there is a folder for outputs, models, videos and a file for logging the outputs
-if not os.path.exists('ddqn-output'):   os.makedirs('ddqn-ouput')
-if not os.path.exists('ddqn-models'):   os.makedirs('ddqn-models')
-if not os.path.exists('ddqn-videos'):   os.makedirs('ddqn-videos')
+if not os.path.exists('/output/ddqn-output'):   os.makedirs('output/ddqn-output')
+if not os.path.exists('/output/ddqn-models'):   os.makedirs('output/ddqn-models')
+if not os.path.exists('/output/ddqn-videos'):   os.makedirs('output/ddqn-videos')
 
 
 # Create a virtual bot and an environment for them to play
@@ -42,18 +44,18 @@ class Bot:
         # Wrap the environment in a modified version of baseline's retro/atari wrappers
         # - If saving the video put the .bk2 files in the ddqn-videos folder
         if self.save_video:
-            env = retro_wrappers.make_retro(game=self.game, record="ddqn-videos/", Stochastic_FrameSkip=True)
+            env = make_retro(game=self.game, record="output/ddqn-videos/", Stochastic_FrameSkip=True)
         else:
-            env = retro_wrappers.make_retro(game=self.game)
+            env = make_retro(game=self.game)
 
         # Limit the number of actions the agent can take (lower is better as there are fewer values to converge on)
-        env = retro_wrappers.AirstrikerDiscretizer(env)
+        env = AirstrikerDiscretizer(env)
 
         # Resize the frames received and stack four of them on top of one another - the agent can interpret displacement
-        env = retro_wrappers.wrap_deepmind_retro(env, scale=True, frame_stack=4)
+        env = wrap_deepmind_retro(env, scale=True, frame_stack=4)
 
         # Calculate the number of actions the agent can perform
-        n_actions = retro_wrappers.AirstrikerDiscretizer(env).n_actions()
+        n_actions = AirstrikerDiscretizer(env).n_actions()
 
         return env, n_actions
 
