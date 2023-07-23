@@ -12,18 +12,16 @@ import os
 from reinforcement_learning.retro_wrappers import make_retro, AirstrikerDiscretizer, wrap_deepmind_retro
 from utils.plotter import PlotResults
 
-print("inside bot.py")
-
 # Make sure there is a folder for outputs, models, videos and a file for logging the outputs
-if not os.path.exists('/output/ddqn-output'):   os.makedirs('output/ddqn-output')
-if not os.path.exists('/output/ddqn-models'):   os.makedirs('output/ddqn-models')
-if not os.path.exists('/output/ddqn-videos'):   os.makedirs('output/ddqn-videos')
+if not os.path.exists('src/output/ddqn-output'):   os.makedirs('src/output/ddqn-output')
+if not os.path.exists('src/output/ddqn-models'):   os.makedirs('src/output/ddqn-models')
+if not os.path.exists('src/output/ddqn-videos'):   os.makedirs('src/output/ddqn-videos')
 
 
 # Create a virtual bot and an environment for them to play
 # Link the bot to a neural network and track whether or not it's learning as it plays
 class Bot:
-    def __init__(self, game, n_games=1000, results_filename='Output.txt', save_video=False):
+    def __init__(self, game, n_games=1000, results_filename='src/output/Output.txt', save_video=False):
 
         # Game name - This can also contain extra arguments, such as which stage to start on
         self.game                = game
