@@ -114,7 +114,7 @@ class ddqn(object):
 
     # Save the model
     def save_model(self, i):
-        self.q_evaluation.save(f'ddqn-output/{i}-ddqn_model.h5')
+        self.q_evaluation.save(f'src/output/ddqn-output/{i}-ddqn_model.h5')
 
     # Load the model
     def load_model(self, model_name):

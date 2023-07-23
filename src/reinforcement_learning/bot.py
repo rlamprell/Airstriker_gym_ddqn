@@ -191,7 +191,7 @@ class Bot:
 
                 # Save the graph
                 x = [i for i in range(i + 1)]
-                filename = f'ddqn-output/ddqnRetro-TimeScores--Episodes{i}.png'
+                filename = f'src/output/ddqn-output/ddqnRetro-TimeScores--Episodes{i}.png'
                 plotter.plot_results(x, ddqn_scores, ddqn_times, filename)
 
     # Test running game model - loading a model
