@@ -2,7 +2,6 @@
 
 from reinforcement_learning.bot import Bot
 from reinforcement_learning.ddqn_model import ddqn
-# import reinforcement_learning.ddqn_model
 
 # Test the code from here
 if __name__ == '__main__':
