@@ -1,4 +1,4 @@
-# Airstriker_gym_ddqn
+# Airstriker OpenAI Double Deep Q-Learning
 
 ## Project Description
 This repository trains a Deep Reinforcement Learning agent to play the Sega Genesis game 'Airstriker' using the following tech stack:
@@ -8,7 +8,7 @@ This repository trains a Deep Reinforcement Learning agent to play the Sega Gene
 
 ## Quick Start
 - git clone the repo
-- cd into src
+- cd into repo_path/src
 - run python main_test.py or python main_train.py
 
 ## Architecture
