@@ -19,7 +19,7 @@ This repository trains a Deep Reinforcement Learning agent to play the Sega Gene
 A collection of videos displaying an Agent's performance at various points.
 
 ### MSE 8 batches after 100 episodes
-Using MSE, after 100 episodes the agent has begun developing a strategy but is unable to compelte the game.
+Using MSE, after 100 episodes the agent has begun developing a strategy but is unable to complete the game.
 
 [View Video](https://github.com/rlamprell/Airstriker_gym_ddqn/assets/90906655/34196079-0858-4cae-8eff-0866cb7b8afe)
 
