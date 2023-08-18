@@ -12,7 +12,7 @@ This repository trains a Deep Reinforcement Learning agent to play the Sega Gene
 - run python main_test.py or python main_train.py
 
 ## Architecture
-
+TODO
 
 
 ## Results
